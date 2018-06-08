@@ -7,12 +7,12 @@ class InitialController extends Controller
 {
       public function send_success_response($message,$status,$data){
       	
-      	$res = array('message' =>$message ,'status'=>$status,'status_code'=>0,'Data'=>$data );
+      	$res = array('Message' =>$message ,'Status'=>$status,'StatusNo'=>0,'result'=>$data );
       	return Response::json($res);
       }
       public function send_failure_response($message,$status,$data){
 
-      	$res = array('message' =>$message ,'status'=>$status,'status_code'=>1,'Data'=>[] );
+      	$res = array('Message' =>$message ,'Status'=>$status,'StatusNo'=>1,'result'=>[] );
 
       	return Response::json($res);
       }
