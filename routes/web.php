@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('view-user','UserController@view_user_fuction');
+Route::post('lead-details','UserController@view_lead_details');
