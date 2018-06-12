@@ -30,7 +30,7 @@ use DB;
    }else{
 
 
-echo "login has been successfully";
+return redirect('view-user');
 
 
 

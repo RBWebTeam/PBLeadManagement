@@ -18,3 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('user-login','ApiController@check_user_login');
+Route::post('user-register','ApiController@registration_user');
+Route::post('lead-create','LeadController@Create_Lead');
+Route::post('lead-detail','LeadController@Details_Lead');
